@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-10HomeAssignment</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    box-shadow: 1px 1px 1px ;
+    padding: 10px;
+    font-weight: 900;
+    
+}
+    </style>
+</head>
+<body>
+    <div>
+        <button>Change BackGround Color</button>
+    </div>
+    
+    <script>
+        var Color = [
+    "green",
+    "cyan",
+    "black",
+    "voilet",
+    "blue",
+    "yellow",
+    "purple",
+    "orange",
+    "lightgreen",
+    "lemon",
+  ];
+  var index = 0 ;
+  var div = document.querySelector("div");
+  const button = document.querySelector("button");
+  button.addEventListener("click", function() {
+      if (index === Color.length) {
+          index = 0;
+    }
+          div.style.backgroundColor = Color[index];
+          index++;
+  })
+    </script>
+</body>
+</html>
